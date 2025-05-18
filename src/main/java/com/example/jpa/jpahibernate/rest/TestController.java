@@ -17,15 +17,14 @@ public class TestController{
     private  List<Student> students;
 
     @PostConstruct
-    public void init(){
+    public void chutiya(){
         students = new ArrayList<>();
         students.add(new Student("Nayan", "padia"));
         students.add(new Student("Diprit", "Khaitan"));
-
     }
+
     @GetMapping("/test")
     public List<Student> nayan() {
-
 
         return students;
     }
